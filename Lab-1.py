@@ -88,15 +88,7 @@ def sequence():
     print(f'{GREEN}{" " * int(answernechet / 2)}{END} {answernechet:.1f}%')
 
 
-'''
-def function():
-    print("График функции y = |x|:\n")
-    print("  ^ y")
-    for y in range(9, 0, -1):
-        print(f"{y:2.0f}|{' ' * (y * 2 - 1)}*")
-    print(" 0*---------------------> x")
-    print("   1 2 3 4 5 6 7 8 9 10")
-'''
+
 def function():
     print("График функции y = |x|:\n")
     print("  ^ y")
@@ -105,14 +97,13 @@ def function():
             print(f"{y}|{' ' * (y * 2 - 1)}{RED}+{END}")
         else:
             print(f" {y}|{' ' * (y * 2 - 1)}{RED}+{END}")
-    
-    # Точку ноль тоже делаем цветным квадратиком
+
     print(f" 0{RED}+{END}-----------------------> x")
     print("    1 2 3 4 5 6 7 8 9 10 11 12")
     
 
-#animate()
+animate()
 function()
-#sequence()
-#flag()
-#pattern()
+sequence()
+flag()
+pattern()
